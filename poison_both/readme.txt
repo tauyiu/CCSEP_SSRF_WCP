@@ -1,6 +1,6 @@
 1) Autorun:-
 
-   In the SSRF/app directory, run:
+   In the poison_both/app directory, run:
    ./run.sh
 
    If you get a permission denied' error, try running:
@@ -9,7 +9,7 @@
 
 2) Manual run:-
 
-   go to SSRF/app directory, then run the following in order:
+   go to poison_both/app directory, then run the following in order:
    python3 -m venv venv
    source venv/bin/activate
    python3 -m pip install -r requirements.txt
