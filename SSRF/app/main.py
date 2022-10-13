@@ -19,13 +19,13 @@ def getNumber():
 def admin():
     if request.method == "POST":
         value = request.form["password"]
-        flag = request.form["trigger"]
+        flag = request.form["is_safe"]
         return adminPage(value, flag)
     else:
         return render_template("login.html")
 
 def adminPage(pw, flag):
-    if (pw == "qazwsxedcrfvtgbyhnujmikolp") or (flag == "t"):
+    if (pw == "qazwsxedcrfvtgbyhnujmikolp") or (flag == "true"):
         return render_template("admin.html")
     else:
         return "<h1>REQUEST DENIED</h1>"
